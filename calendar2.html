@@ -1,0 +1,18 @@
+<html>
+<script src="jsuites.js"></script>
+<link rel="stylesheet" href = "styles.css">
+<link rel="stylesheet" href = "normalize.css">
+<link rel="stylesheet" href="jsuites.css" type="text/css" />
+ 
+// JavaScript Calendar Example
+<input id='calendar' />
+ 
+<script>
+// Enable the year and month picker
+jSuites.calendar(document.getElementById('calendar'), {
+    type: 'year-month-picker',
+    format: 'MMM-YYYY',
+    validRange: [ '1978-03-01', '2022-12-31' ]
+});
+</script>
+</html>
