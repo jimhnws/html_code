@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Baseball Travels</title>
+        <style>
+            a { background-color: #424242; }
+            #toggleMeMLB { background: #424242; display: none; margin: 30px 0; padding: 1em; }
+            #toggleMeMiLB { background: #424242; display: none; margin: 30px 0; padding: 1em; }
+            #toggleMeNPB { background: #424242; display: none; margin: 30px 0; padding: 1em; }
+            #toggleMeALPB { background: #424242; display: none; margin: 30px 0; padding: 1em; }
+        </style>
+<STYLE>A {text-decoration: none;} </STYLE>
+    </head>
+    <body bgcolor="#262626">
+        <h1><font color=#ffffff>&nbsp;&nbsp;&nbsp;Baseball Travels</font></h1>
+<table cellspacing=25 cellpadding=35 border=0 width=100%><tr><td bgcolor=#424242>
+        
+        <a id="showhideMLB" href="#"><font color=#ffffff size=+3>Major League Baseball</font></a>
+        
+		<table id="toggleMeMLB" border=1>
+		<tr><th colspan=3><font color=#ffffff size=+2>National League</font></th><th colspan=3><font color=#ffffff size=+2>American League</font></th></tr>
+		<tr>
+			<th><font color=#ffffff size=+1>East</font></th><th><font color=#ffffff size=+1>Central</font></th><th><font color=#ffffff size=+1> West</font></th>
+			<th><font color=#ffffff size=+1>East</font></th><th><font color=#ffffff size=+1>Central</font></th><th><font color=#ffffff size=+1>West</font></th>
+		</tr>
+		</table></td></tr><tr><td bgcolor=#424242>
+        <a id="showhideMiLB" href="#"><font size=+3 color=#ffffff>Minor League Baseball</font></a>
+        
+		<table id="toggleMeMiLB" border=1>
+		<tr>
+			<th><font color=#ffffff size=+2>AAA</font></th><th><font color=#ffffff size=+2>AA</font></th><th><font color=#ffffff size=+2>A</font></th>
+		</tr>
+		</table></td></tr><tr><td bgcolor=#424242>        
+        <a id="showhideNPB" href="#"><font size=+3 color=#ffffff>Nippon Professional Baseball</font></a>
+        
+		<table id="toggleMeNPB" border=1>
+		<tr>
+			<th><font color=#ffffff size=+2>Central League</font></th><th><font color=#ffffff size=+2>Pacific League</font></th>
+		</tr>
+		</table></td></tr><tr><td bgcolor=#424242>        
+        <a id="showhideALPB" href="#"><font size=+3 color=#ffffff>Atlantic League of Professional Baseball</font></a>
+        
+		<table id="toggleMeALPB" border=1>
+		<tr>
+			<th><font color=#ffffff size=+2>Atlantic League</font></th>
+		</tr>
+		</table>    
+</td></tr></table>    
+        
+        <script>
+            function changeDisplayState(id) {
+                var d = document.getElementById('showhideMLB'),
+                    e = document.getElementById(id);
+                if (e.style.display === 'none' || e.style.display === '') {
+                    e.style.display = 'block';
+                    d.innerHTML = 'Major League Baseball';
+                } else {
+                    e.style.display = 'none';
+                    d.innerHTML = 'Major League Baseball';
+                }
+            }
+            document.getElementById('showhideMLB').addEventListener('click', function (e) {
+                e.preventDefault();
+                changeDisplayState('toggleMeMLB');
+            });
+        </script>
+        <script>
+            function changeDisplayState(id) {
+                var d = document.getElementById('showhideMiLB'),
+                    e = document.getElementById(id);
+                if (e.style.display === 'none' || e.style.display === '') {
+                    e.style.display = 'block';
+                    d.innerHTML = 'Minor League Baseball';
+                } else {
+                    e.style.display = 'none';
+                    d.innerHTML = 'Minor League Baseball';
+                }
+            }
+            document.getElementById('showhideMiLB').addEventListener('click', function (e) {
+                e.preventDefault();
+                changeDisplayState('toggleMeMiLB');
+            });
+        </script>
+        <script>
+            function changeDisplayState(id) {
+                var d = document.getElementById('showhideNPB'),
+                    e = document.getElementById(id);
+                if (e.style.display === 'none' || e.style.display === '') {
+                    e.style.display = 'block';
+                    d.innerHTML = 'Nippon Professional Baseball';
+                } else {
+                    e.style.display = 'none';
+                    d.innerHTML = 'Nippon Professional Baseball';
+                }
+            }
+            document.getElementById('showhideNPB').addEventListener('click', function (e) {
+                e.preventDefault();
+                changeDisplayState('toggleMeNPB');
+            });
+        </script>
+        <script>
+            function changeDisplayState(id) {
+                var d = document.getElementById('showhideALPB'),
+                    e = document.getElementById(id);
+                if (e.style.display === 'none' || e.style.display === '') {
+                    e.style.display = 'block';
+                    d.innerHTML = '<font size=+3 color=#ffffff>Atlantic League of Professional Baseball</font>';
+                } else {
+                    e.style.display = 'none';
+                    d.innerHTML = '<font size=+3 color=#ffffff>Atlantic League of Professional Baseball</font>';
+                }
+            }
+            document.getElementById('showhideALPB').addEventListener('click', function (e) {
+                e.preventDefault();
+                changeDisplayState('toggleMeALPB');
+            });
+        </script>
+    </body>
+</html>
